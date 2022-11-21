@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Finalproj
 {
-    public partial class UserControl1 : UserControl
+    public partial class dogControl : UserControl
     {
-        public UserControl1()
+        public dogControl()
         {
             InitializeComponent();
         }
