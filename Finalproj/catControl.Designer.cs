@@ -1,6 +1,6 @@
 ﻿namespace Finalproj
 {
-    partial class catsDogsControl
+    partial class catPanel
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,17 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(catsDogsControl));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(catPanel));
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.catPanel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.button3 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.panel2.SuspendLayout();
+            this.catPanel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -62,18 +62,18 @@
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
             // 
-            // panel2
+            // catPanel1
             // 
-            this.panel2.Controls.Add(this.panel4);
-            this.panel2.Controls.Add(this.button3);
-            this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.label8);
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.pictureBox1);
-            this.panel2.Location = new System.Drawing.Point(3, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(462, 559);
-            this.panel2.TabIndex = 9;
+            this.catPanel1.Controls.Add(this.panel4);
+            this.catPanel1.Controls.Add(this.button3);
+            this.catPanel1.Controls.Add(this.label7);
+            this.catPanel1.Controls.Add(this.label8);
+            this.catPanel1.Controls.Add(this.label6);
+            this.catPanel1.Controls.Add(this.pictureBox1);
+            this.catPanel1.Location = new System.Drawing.Point(3, 3);
+            this.catPanel1.Name = "catPanel1";
+            this.catPanel1.Size = new System.Drawing.Size(462, 559);
+            this.catPanel1.TabIndex = 9;
             // 
             // panel4
             // 
@@ -122,17 +122,17 @@
             this.label6.TabIndex = 4;
             this.label6.Text = "Adopt the Cutest Kittens";
             // 
-            // catsDogsControl
+            // catPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.panel2);
-            this.Name = "catsDogsControl";
+            this.Controls.Add(this.catPanel1);
+            this.Name = "catPanel";
             this.Size = new System.Drawing.Size(471, 567);
             this.Load += new System.EventHandler(this.catsDogsControl_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.catPanel1.ResumeLayout(false);
+            this.catPanel1.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.ResumeLayout(false);
@@ -143,7 +143,7 @@
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel catPanel1;
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;

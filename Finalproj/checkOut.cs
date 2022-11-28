@@ -42,7 +42,9 @@ namespace Finalproj
 
         private void button9_Click(object sender, EventArgs e)
         {
-            ShowForm(loginForm);
+
+
+
         }
         private void ShowForm(Form frmSubForm)
         {
@@ -57,6 +59,11 @@ namespace Finalproj
                     control.Show();
                 }
             }
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace Finalproj
 {
-    partial class dogControl
+    partial class dogPanel
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dogControl));
-            this.panel1 = new System.Windows.Forms.Panel();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(dogPanel));
+            this.dogPanel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -37,23 +37,23 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
+            this.dogPanel1.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // dogPanel1
             // 
-            this.panel1.Controls.Add(this.panel5);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Location = new System.Drawing.Point(75, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(394, 428);
-            this.panel1.TabIndex = 9;
+            this.dogPanel1.Controls.Add(this.panel5);
+            this.dogPanel1.Controls.Add(this.label3);
+            this.dogPanel1.Controls.Add(this.pictureBox2);
+            this.dogPanel1.Controls.Add(this.label5);
+            this.dogPanel1.Controls.Add(this.label4);
+            this.dogPanel1.Controls.Add(this.button1);
+            this.dogPanel1.Location = new System.Drawing.Point(21, 3);
+            this.dogPanel1.Name = "dogPanel1";
+            this.dogPanel1.Size = new System.Drawing.Size(394, 428);
+            this.dogPanel1.TabIndex = 9;
             // 
             // panel5
             // 
@@ -122,15 +122,15 @@
             this.button1.Text = "Buy Online";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // dogControl
+            // dogPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.panel1);
-            this.Name = "dogControl";
+            this.Controls.Add(this.dogPanel1);
+            this.Name = "dogPanel";
             this.Size = new System.Drawing.Size(469, 443);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.dogPanel1.ResumeLayout(false);
+            this.dogPanel1.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -140,7 +140,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel dogPanel1;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox2;

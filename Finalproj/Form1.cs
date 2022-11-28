@@ -15,8 +15,54 @@ namespace Finalproj
         public Form1()
         {
             InitializeComponent();
-            panel1.Height = button4.Height;
-            panel2.BringToFront();
+            navigationPanel.Height = catdogButton.Height;
+
+        }
+
+
+        private void ShowForm(Form frmSubForm)
+        {
+            foreach (Control control in this.navigationPanel.Controls)
+            {
+                if (control != frmSubForm)
+                {
+                    control.Hide();
+                }
+                else
+                {
+                    control.Show();
+                }
+            }
+        }
+
+        private void homeButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void catdogButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void birdButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void aquaticButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void loginButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void checkOutButton_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void exitButton_Click(object sender, EventArgs e)
@@ -24,9 +70,5 @@ namespace Finalproj
             this.Close();
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            panel1.Height = button4.Height;
-        }
     }
 }

@@ -35,10 +35,10 @@
             this.label5 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.birdPanel1 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel4.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.birdPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -98,31 +98,31 @@
             this.panel4.Size = new System.Drawing.Size(456, 33);
             this.panel4.TabIndex = 11;
             // 
-            // panel1
+            // birdPanel1
             // 
-            this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.pictureBox1);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Location = new System.Drawing.Point(3, 3);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(459, 461);
-            this.panel1.TabIndex = 12;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            this.birdPanel1.Controls.Add(this.panel4);
+            this.birdPanel1.Controls.Add(this.pictureBox1);
+            this.birdPanel1.Controls.Add(this.label5);
+            this.birdPanel1.Controls.Add(this.label3);
+            this.birdPanel1.Controls.Add(this.button1);
+            this.birdPanel1.Location = new System.Drawing.Point(3, 3);
+            this.birdPanel1.Name = "birdPanel1";
+            this.birdPanel1.Size = new System.Drawing.Size(459, 461);
+            this.birdPanel1.TabIndex = 12;
+            this.birdPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
-            // UserControl1
+            // birdControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.panel1);
-            this.Name = "UserControl1";
+            this.Controls.Add(this.birdPanel1);
+            this.Name = "birdControl";
             this.Size = new System.Drawing.Size(461, 412);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.birdPanel1.ResumeLayout(false);
+            this.birdPanel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -135,6 +135,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel birdPanel1;
     }
 }

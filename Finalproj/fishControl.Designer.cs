@@ -1,6 +1,6 @@
 ﻿namespace Finalproj
 {
-    partial class fishControl
+    partial class fishPanel
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fishControl));
-            this.panel1 = new System.Windows.Forms.Panel();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(fishPanel));
+            this.fishPanel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -37,23 +37,23 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
+            this.fishPanel1.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
             // 
-            // panel1
+            // fishPanel1
             // 
-            this.panel1.Controls.Add(this.panel5);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.pictureBox2);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Location = new System.Drawing.Point(-6, -12);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(394, 428);
-            this.panel1.TabIndex = 10;
+            this.fishPanel1.Controls.Add(this.panel5);
+            this.fishPanel1.Controls.Add(this.label3);
+            this.fishPanel1.Controls.Add(this.pictureBox2);
+            this.fishPanel1.Controls.Add(this.label5);
+            this.fishPanel1.Controls.Add(this.label4);
+            this.fishPanel1.Controls.Add(this.button1);
+            this.fishPanel1.Location = new System.Drawing.Point(-6, -12);
+            this.fishPanel1.Name = "fishPanel1";
+            this.fishPanel1.Size = new System.Drawing.Size(394, 428);
+            this.fishPanel1.TabIndex = 10;
             // 
             // panel5
             // 
@@ -122,15 +122,15 @@
             this.button1.Text = "Buy Online";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // fishControl
+            // fishPanel
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.panel1);
-            this.Name = "fishControl";
+            this.Controls.Add(this.fishPanel1);
+            this.Name = "fishPanel";
             this.Size = new System.Drawing.Size(383, 405);
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.fishPanel1.ResumeLayout(false);
+            this.fishPanel1.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -140,7 +140,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel fishPanel1;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;

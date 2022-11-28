@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Finalproj
 {
-    public partial class fishControl : UserControl
+    public partial class fishPanel : UserControl
     {
-        public fishControl()
+        public fishPanel()
         {
             InitializeComponent();
         }
