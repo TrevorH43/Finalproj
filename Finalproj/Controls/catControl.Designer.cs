@@ -1,6 +1,6 @@
 ﻿namespace Finalproj
 {
-    partial class catPanel
+    partial class catControl
     {
         /// <summary> 
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(catPanel));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(catControl));
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.catPanel1 = new System.Windows.Forms.Panel();
@@ -79,7 +79,7 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(200)))), ((int)(((byte)(128)))));
             this.panel4.Controls.Add(this.label1);
-            this.panel4.Location = new System.Drawing.Point(9, 139);
+            this.panel4.Location = new System.Drawing.Point(6, 108);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(456, 33);
             this.panel4.TabIndex = 10;
@@ -92,6 +92,7 @@
             this.button3.TabIndex = 9;
             this.button3.Text = "Buy Online";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // label7
             // 
@@ -122,13 +123,13 @@
             this.label6.TabIndex = 4;
             this.label6.Text = "Adopt the Cutest Kittens";
             // 
-            // catPanel
+            // catControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.catPanel1);
-            this.Name = "catPanel";
-            this.Size = new System.Drawing.Size(471, 567);
+            this.Name = "catControl";
+            this.Size = new System.Drawing.Size(462, 567);
             this.Load += new System.EventHandler(this.catsDogsControl_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.catPanel1.ResumeLayout(false);

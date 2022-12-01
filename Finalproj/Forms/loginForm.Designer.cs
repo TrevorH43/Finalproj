@@ -28,9 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(loginForm));
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.loginTextBox = new System.Windows.Forms.TextBox();
+            this.passwordTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -52,33 +53,37 @@
             this.panel5 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
+            this.checkOutButton = new System.Windows.Forms.Button();
+            this.loginButton = new System.Windows.Forms.Button();
+            this.catdogButton = new System.Windows.Forms.Button();
+            this.birdButton = new System.Windows.Forms.Button();
+            this.fishButton = new System.Windows.Forms.Button();
+            this.homeButton = new System.Windows.Forms.Button();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
-            // textBox1
+            // loginTextBox
             // 
-            this.textBox1.Location = new System.Drawing.Point(106, 73);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(148, 20);
-            this.textBox1.TabIndex = 0;
+            this.loginTextBox.Location = new System.Drawing.Point(106, 73);
+            this.loginTextBox.Name = "loginTextBox";
+            this.loginTextBox.Size = new System.Drawing.Size(148, 20);
+            this.loginTextBox.TabIndex = 0;
+            this.loginTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.loginTextBox_Validating);
             // 
-            // textBox2
+            // passwordTextBox
             // 
-            this.textBox2.Location = new System.Drawing.Point(106, 109);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(148, 20);
-            this.textBox2.TabIndex = 1;
+            this.passwordTextBox.Location = new System.Drawing.Point(106, 109);
+            this.passwordTextBox.Name = "passwordTextBox";
+            this.passwordTextBox.Size = new System.Drawing.Size(148, 20);
+            this.passwordTextBox.TabIndex = 1;
+            this.passwordTextBox.Validating += new System.ComponentModel.CancelEventHandler(this.passwordTextBox_Validating);
             // 
             // label1
             // 
@@ -102,9 +107,9 @@
             // 
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.loginTextBox);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.textBox2);
+            this.panel1.Controls.Add(this.passwordTextBox);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(206, 37);
             this.panel1.Name = "panel1";
@@ -119,6 +124,7 @@
             this.button1.TabIndex = 5;
             this.button1.Text = "Login";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label3
             // 
@@ -159,6 +165,7 @@
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(148, 20);
             this.textBox5.TabIndex = 6;
+            this.textBox5.Validating += new System.ComponentModel.CancelEventHandler(this.textBox5_Validating);
             // 
             // button2
             // 
@@ -168,6 +175,7 @@
             this.button2.TabIndex = 5;
             this.button2.Text = "Register";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // label4
             // 
@@ -184,6 +192,7 @@
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(148, 20);
             this.textBox3.TabIndex = 0;
+            this.textBox3.Validating += new System.ComponentModel.CancelEventHandler(this.textBox3_Validating);
             // 
             // label5
             // 
@@ -200,6 +209,7 @@
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(148, 20);
             this.textBox4.TabIndex = 1;
+            this.textBox4.Validating += new System.ComponentModel.CancelEventHandler(this.textBox4_Validating);
             // 
             // label6
             // 
@@ -233,12 +243,12 @@
             // 
             this.panel4.Controls.Add(this.exitButton);
             this.panel4.Controls.Add(this.panel5);
-            this.panel4.Controls.Add(this.button6);
-            this.panel4.Controls.Add(this.button5);
-            this.panel4.Controls.Add(this.button4);
-            this.panel4.Controls.Add(this.button7);
-            this.panel4.Controls.Add(this.button8);
-            this.panel4.Controls.Add(this.button9);
+            this.panel4.Controls.Add(this.checkOutButton);
+            this.panel4.Controls.Add(this.loginButton);
+            this.panel4.Controls.Add(this.catdogButton);
+            this.panel4.Controls.Add(this.birdButton);
+            this.panel4.Controls.Add(this.fishButton);
+            this.panel4.Controls.Add(this.homeButton);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
@@ -287,72 +297,76 @@
             this.pictureBox2.TabIndex = 3;
             this.pictureBox2.TabStop = false;
             // 
-            // button6
+            // checkOutButton
             // 
-            this.button6.Image = ((System.Drawing.Image)(resources.GetObject("button6.Image")));
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(0, 425);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(200, 51);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "Check Out";
-            this.button6.UseVisualStyleBackColor = true;
+            this.checkOutButton.Image = ((System.Drawing.Image)(resources.GetObject("checkOutButton.Image")));
+            this.checkOutButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.checkOutButton.Location = new System.Drawing.Point(0, 425);
+            this.checkOutButton.Name = "checkOutButton";
+            this.checkOutButton.Size = new System.Drawing.Size(200, 51);
+            this.checkOutButton.TabIndex = 5;
+            this.checkOutButton.Text = "Check Out";
+            this.checkOutButton.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // loginButton
             // 
-            this.button5.Image = ((System.Drawing.Image)(resources.GetObject("button5.Image")));
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(0, 368);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(200, 51);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Login/Register";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.loginButton.Image = ((System.Drawing.Image)(resources.GetObject("loginButton.Image")));
+            this.loginButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.loginButton.Location = new System.Drawing.Point(0, 368);
+            this.loginButton.Name = "loginButton";
+            this.loginButton.Size = new System.Drawing.Size(200, 51);
+            this.loginButton.TabIndex = 4;
+            this.loginButton.Text = "Login/Register";
+            this.loginButton.UseVisualStyleBackColor = true;
+            this.loginButton.Click += new System.EventHandler(this.button5_Click);
             // 
-            // button4
+            // catdogButton
             // 
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(0, 196);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(200, 51);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Cats/Dogs";
-            this.button4.UseVisualStyleBackColor = true;
+            this.catdogButton.Image = ((System.Drawing.Image)(resources.GetObject("catdogButton.Image")));
+            this.catdogButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.catdogButton.Location = new System.Drawing.Point(0, 196);
+            this.catdogButton.Name = "catdogButton";
+            this.catdogButton.Size = new System.Drawing.Size(200, 51);
+            this.catdogButton.TabIndex = 3;
+            this.catdogButton.Text = "Cats/Dogs";
+            this.catdogButton.UseVisualStyleBackColor = true;
             // 
-            // button7
+            // birdButton
             // 
-            this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
-            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.Location = new System.Drawing.Point(0, 254);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(200, 51);
-            this.button7.TabIndex = 2;
-            this.button7.Text = "Birds";
-            this.button7.UseVisualStyleBackColor = true;
+            this.birdButton.Image = ((System.Drawing.Image)(resources.GetObject("birdButton.Image")));
+            this.birdButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.birdButton.Location = new System.Drawing.Point(0, 254);
+            this.birdButton.Name = "birdButton";
+            this.birdButton.Size = new System.Drawing.Size(200, 51);
+            this.birdButton.TabIndex = 2;
+            this.birdButton.Text = "Birds";
+            this.birdButton.UseVisualStyleBackColor = true;
             // 
-            // button8
+            // fishButton
             // 
-            this.button8.Image = ((System.Drawing.Image)(resources.GetObject("button8.Image")));
-            this.button8.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
-            this.button8.Location = new System.Drawing.Point(0, 311);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(200, 51);
-            this.button8.TabIndex = 1;
-            this.button8.Text = "Aquatic Animals";
-            this.button8.UseVisualStyleBackColor = true;
+            this.fishButton.Image = ((System.Drawing.Image)(resources.GetObject("fishButton.Image")));
+            this.fishButton.ImageAlign = System.Drawing.ContentAlignment.BottomLeft;
+            this.fishButton.Location = new System.Drawing.Point(0, 311);
+            this.fishButton.Name = "fishButton";
+            this.fishButton.Size = new System.Drawing.Size(200, 51);
+            this.fishButton.TabIndex = 1;
+            this.fishButton.Text = "Aquatic Animals";
+            this.fishButton.UseVisualStyleBackColor = true;
             // 
-            // button9
+            // homeButton
             // 
-            this.button9.Image = ((System.Drawing.Image)(resources.GetObject("button9.Image")));
-            this.button9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button9.Location = new System.Drawing.Point(0, 140);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(200, 50);
-            this.button9.TabIndex = 0;
-            this.button9.Text = "Home";
-            this.button9.UseVisualStyleBackColor = true;
+            this.homeButton.Image = ((System.Drawing.Image)(resources.GetObject("homeButton.Image")));
+            this.homeButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.homeButton.Location = new System.Drawing.Point(0, 140);
+            this.homeButton.Name = "homeButton";
+            this.homeButton.Size = new System.Drawing.Size(200, 50);
+            this.homeButton.TabIndex = 0;
+            this.homeButton.Text = "Home";
+            this.homeButton.UseVisualStyleBackColor = true;
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // loginForm
             // 
@@ -376,14 +390,15 @@
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox loginTextBox;
+        private System.Windows.Forms.TextBox passwordTextBox;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel1;
@@ -405,11 +420,12 @@
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button checkOutButton;
+        private System.Windows.Forms.Button loginButton;
+        private System.Windows.Forms.Button catdogButton;
+        private System.Windows.Forms.Button birdButton;
+        private System.Windows.Forms.Button fishButton;
+        private System.Windows.Forms.Button homeButton;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }

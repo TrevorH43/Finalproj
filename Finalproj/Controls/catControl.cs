@@ -10,14 +10,19 @@ using System.Windows.Forms;
 
 namespace Finalproj
 {
-    public partial class catPanel : UserControl
+    public partial class catControl : UserControl
     {
-        public catPanel()
+        public catControl()
         {
             InitializeComponent();
         }
 
         private void catsDogsControl_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
         {
 
         }

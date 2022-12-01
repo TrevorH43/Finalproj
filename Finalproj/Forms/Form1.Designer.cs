@@ -44,6 +44,9 @@
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.birdControl1 = new Finalproj.birdControl();
+            this.catControl1 = new Finalproj.catControl();
+            this.fishPanel1 = new Finalproj.fishPanel();
             this.navigationPanel.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -138,7 +141,7 @@
             // 
             this.catdogButton.Image = ((System.Drawing.Image)(resources.GetObject("catdogButton.Image")));
             this.catdogButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.catdogButton.Location = new System.Drawing.Point(0, 196);
+            this.catdogButton.Location = new System.Drawing.Point(-3, 196);
             this.catdogButton.Name = "catdogButton";
             this.catdogButton.Size = new System.Drawing.Size(200, 51);
             this.catdogButton.TabIndex = 3;
@@ -205,7 +208,7 @@
             // pictureBox2
             // 
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(775, 41);
+            this.pictureBox2.Location = new System.Drawing.Point(787, 33);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(219, 149);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -216,21 +219,45 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(207, 49);
+            this.label3.Location = new System.Drawing.Point(203, 36);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(384, 120);
             this.label3.TabIndex = 3;
             this.label3.Text = resources.GetString("label3.Text");
+            // 
+            // birdControl1
+            // 
+            this.birdControl1.Location = new System.Drawing.Point(200, 36);
+            this.birdControl1.Name = "birdControl1";
+            this.birdControl1.Size = new System.Drawing.Size(449, 569);
+            this.birdControl1.TabIndex = 4;
+            // 
+            // catControl1
+            // 
+            this.catControl1.Location = new System.Drawing.Point(200, 36);
+            this.catControl1.Name = "catControl1";
+            this.catControl1.Size = new System.Drawing.Size(456, 546);
+            this.catControl1.TabIndex = 5;
+            // 
+            // fishPanel1
+            // 
+            this.fishPanel1.Location = new System.Drawing.Point(200, 33);
+            this.fishPanel1.Name = "fishPanel1";
+            this.fishPanel1.Size = new System.Drawing.Size(591, 563);
+            this.fishPanel1.TabIndex = 6;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1006, 599);
+            this.Controls.Add(this.fishPanel1);
+            this.Controls.Add(this.birdControl1);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.decorationPanel);
             this.Controls.Add(this.navigationPanel);
+            this.Controls.Add(this.catControl1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -264,6 +291,9 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label3;
+        private birdControl birdControl1;
+        private catControl catControl1;
+        private fishPanel fishPanel1;
     }
 }
 

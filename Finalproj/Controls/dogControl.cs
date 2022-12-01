@@ -10,16 +10,16 @@ using System.Windows.Forms;
 
 namespace Finalproj
 {
-    public partial class loginForm : Form
+    public partial class dogControl : UserControl
     {
-        public loginForm()
+        public dogControl()
         {
             InitializeComponent();
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void dogControl_Load(object sender, EventArgs e)
         {
-          
+
         }
     }
 }
