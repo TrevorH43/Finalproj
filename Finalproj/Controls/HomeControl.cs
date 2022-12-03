@@ -8,23 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Finalproj
+namespace Finalproj.Controls
 {
-    public partial class CatControl : UserControl
+    public partial class HomeControl : UserControl
     {
-        public CatControl()
+        public HomeControl()
         {
             InitializeComponent();
-        }
-
-        private void catsDogsControl_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

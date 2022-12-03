@@ -1,4 +1,6 @@
-﻿using System;
+﻿using NPOI.SS.UserModel;
+using NPOI.XSSF.UserModel;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -9,10 +11,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using NPOI.OpenXmlFormats.Spreadsheet;
-using NPOI.SS.UserModel;
-using NPOI.SS.Util;
-using NPOI.XSSF.UserModel;
 
 
 namespace Finalproj
@@ -39,6 +37,7 @@ namespace Finalproj
                    bindingSource = new BindingSource(anmialItemList, null);
 
                    dataGridView1.DataSource = bindingSource;
+
 
                    IWorkbook workBook;
 
@@ -117,7 +116,7 @@ namespace Finalproj
             {
                 IWorkbook workBook = new XSSFWorkbook();
 
-                ISheet sheet = new workBook.CreateSheet("Sheet1");
+                ISheet sheet = workBook.CreateSheet("Sheet1");
 
                 int rowNum = 0, colNum = 0;
 
@@ -148,5 +147,59 @@ namespace Finalproj
             }
         }
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void PetForm_Load_1(object sender, EventArgs e)
+        {
+            try
+            {
+                bindingSource = new BindingSource(anmialItemList, null);
+
+                dataGridView1.DataSource = bindingSource;
+
+
+                IWorkbook workBook;
+
+                using (FileStream fs = new FileStream("Book.xlsx", FileMode.Open, FileAccess.Read))
+                {
+                    workBook = new XSSFWorkbook(fs);
+
+                    ISheet sheet = workBook.GetSheetAt(0);
+
+
+                    for (int row = 1; row <= sheet.LastRowNum; row++)
+                    {
+                        IRow curRow = sheet.GetRow(row);
+
+                        if (curRow == null)
+                            break;
+
+                        if (sheet.GetRow(row) != null)
+                        {
+                            ICell column = curRow.GetCell(0);
+
+                            double PetNumber = curRow.GetCell(1).NumericCellValue;
+                            double PetPrice = curRow.GetCell(2).NumericCellValue;
+                            double PetType = curRow.GetCell(2).NumericCellValue;
+                            double PetBreed = curRow.GetCell(2).NumericCellValue;
+
+                            animals = new Animals(PetType, PetNumber, PetPrice, PetBreed);
+                            anmialItemList.Add(animals);
+
+
+                        }
+
+                    }
+
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Excel read Error");
+            }
+        }
     }
 }

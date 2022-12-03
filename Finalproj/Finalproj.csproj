@@ -66,17 +66,23 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Classes\Animals.cs" />
-    <Compile Include="Forms\checkOut.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Forms\checkOut.Designer.cs">
-      <DependentUpon>checkOut.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Controls\dogControl.cs">
+    <Compile Include="Controls\HomeControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Controls\dogControl.Designer.cs">
-      <DependentUpon>dogControl.cs</DependentUpon>
+    <Compile Include="Controls\HomeControl.Designer.cs">
+      <DependentUpon>HomeControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CheckOut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CheckOut.Designer.cs">
+      <DependentUpon>CheckOut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DogControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\DogControl.Designer.cs">
+      <DependentUpon>DogControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\petClass.cs" />
     <Compile Include="Forms\PetForm.cs">
@@ -98,43 +104,46 @@
     <Compile Include="Forms\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Forms\loginForm.cs">
+    <Compile Include="Forms\LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Forms\loginForm.Designer.cs">
-      <DependentUpon>loginForm.cs</DependentUpon>
+    <Compile Include="Forms\LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Classes\Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Controls\catControl.cs">
+    <Compile Include="Controls\CatControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Controls\catControl.Designer.cs">
-      <DependentUpon>catControl.cs</DependentUpon>
+    <Compile Include="Controls\CatControl.Designer.cs">
+      <DependentUpon>CatControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\birdControl.cs">
+    <Compile Include="Controls\BirdControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Controls\birdControl.Designer.cs">
-      <DependentUpon>birdControl.cs</DependentUpon>
+    <Compile Include="Controls\BirdControl.Designer.cs">
+      <DependentUpon>BirdControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Controls\fishControl.cs">
+    <Compile Include="Controls\FishControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Controls\fishControl.Designer.cs">
-      <DependentUpon>fishControl.cs</DependentUpon>
+    <Compile Include="Controls\FishControl.Designer.cs">
+      <DependentUpon>FishControl.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Forms\checkOut.resx">
-      <DependentUpon>checkOut.cs</DependentUpon>
+    <EmbeddedResource Include="Controls\HomeControl.resx">
+      <DependentUpon>HomeControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Controls\dogControl.resx">
-      <DependentUpon>dogControl.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\CheckOut.resx">
+      <DependentUpon>CheckOut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\DogControl.resx">
+      <DependentUpon>DogControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Forms\loginForm.resx">
-      <DependentUpon>loginForm.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\PetForm.resx">
       <DependentUpon>PetForm.cs</DependentUpon>
@@ -148,20 +157,21 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Controls\catControl.resx">
-      <DependentUpon>catControl.cs</DependentUpon>
+    <EmbeddedResource Include="Controls\CatControl.resx">
+      <DependentUpon>CatControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Controls\birdControl.resx">
-      <DependentUpon>birdControl.cs</DependentUpon>
+    <EmbeddedResource Include="Controls\BirdControl.resx">
+      <DependentUpon>BirdControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Controls\fishControl.resx">
-      <DependentUpon>fishControl.cs</DependentUpon>
+    <EmbeddedResource Include="Controls\FishControl.resx">
+      <DependentUpon>FishControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\SearchForm.resx">
       <DependentUpon>SearchForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Excel\Book.xlsx" />
     <None Include="Nuget\packages.config" />
+    <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

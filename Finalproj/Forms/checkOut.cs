@@ -12,10 +12,10 @@ using UtilityLibrary;
 
 namespace Finalproj
 {
-    public partial class checkOut : Form
+    public partial class CheckOut : Form
     {
-        checkOut frmcheckOut = null;
-        public checkOut()
+        CheckOut frmcheckOut = null;
+        public CheckOut()
         {
             InitializeComponent();
         }
@@ -29,7 +29,7 @@ namespace Finalproj
         {
             if (Utility.IsValid(ccNumberTextBox.Text))
             {
-                MessageBox.Show("Credit Card Valid");
+                MessageBox.Show("Order Taken");
             }
             else
             {
@@ -73,37 +73,11 @@ namespace Finalproj
         {
             if (frmcheckOut == null)
             {
-                frmcheckOut = new checkOut();
+                frmcheckOut = new CheckOut();
                 SetFormProperties(frmcheckOut);
             }
             ShowForm(frmcheckOut);
         }
-
-        private void birdButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void catdogButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void fishButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void homeButton_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void exitButton_Click(object sender, EventArgs e)
-        {
-            this.Close();
-        }
-
         private void SetFormProperties(Form frmSubForm)
         {
             frmSubForm.TopLevel = false;
@@ -112,5 +86,115 @@ namespace Finalproj
             this.itemsPanel.Controls.Add(frmSubForm);
         }
 
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox10_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            pictureBoxTopLeft.Image = Image.FromFile
+            (System.Environment.GetFolderPath
+            (System.Environment.SpecialFolder.MyPictures)
+             + @"\catsz.jpg");
+            var lblnew = new Label
+            {
+                Location = new Point(41, 71),
+                Text = "$400",
+                AutoSize = true,
+                BackColor = Color.LightGray,
+                Font = new Font("Microsoft JhengHei UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)0)
+            };
+            //this refers to current form you can use your container according to requirement
+            itemsPanel.Controls.Add(lblnew);
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            pictureBoxTopRight.Image = Image.FromFile
+            (System.Environment.GetFolderPath
+            (System.Environment.SpecialFolder.MyPictures)
+             + @"\pugs.jpg");
+            var lblnew = new Label
+            {
+                Location = new Point(172, 71),
+                Text = "$400",
+                AutoSize = true,
+                BackColor = Color.LightGray,
+                Font = new Font("Microsoft JhengHei UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)0)
+            };
+            //this refers to current form you can use your container according to requirement
+            itemsPanel.Controls.Add(lblnew);
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            pictureBoxBotRight.Image = Image.FromFile
+            (System.Environment.GetFolderPath
+            (System.Environment.SpecialFolder.MyPictures)
+             + @"\zzzzzzzzz.jpg");
+            var lblnew = new Label
+            {
+                Location = new Point(179, 176),
+                Text = "$200",
+                AutoSize = true,
+                BackColor = Color.LightGray,
+                Font = new Font("Microsoft JhengHei UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)0)
+            };
+            //this refers to current form you can use your container according to requirement
+            itemsPanel.Controls.Add(lblnew);
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            pictureBoxBotLeft.Image = Image.FromFile
+            (System.Environment.GetFolderPath
+            (System.Environment.SpecialFolder.MyPictures)
+             + @"\Budgerigar.jpg");
+            var lblnew = new Label
+            {
+                Location = new Point(40, 176),
+                Text = "$150",
+                AutoSize = true,
+                BackColor = Color.LightGray,
+                Font = new Font("Microsoft JhengHei UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point, (byte)0)
+            };
+            //this refers to current form you can use your container according to requirement
+            itemsPanel.Controls.Add(lblnew);
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void ccNumberTextBox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            pictureBoxTopLeft.Image = null;
+            pictureBoxTopLeft.Image = null;
+            pictureBoxTopRight.Image = null;
+            pictureBoxBotRight.Image = null;
+            pictureBoxBotLeft.Image = null;
+            itemsPanel.Controls.Clear();
+        }
     }
 }

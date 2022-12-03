@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Finalproj
 {
-    public partial class birdControl : UserControl
+    public partial class BirdControl : UserControl
     {
-        public birdControl()
+        public BirdControl()
         {
             InitializeComponent();
         }
@@ -24,7 +24,7 @@ namespace Finalproj
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+          
         }
     }
 }

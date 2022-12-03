@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Finalproj
+namespace Finalproj.Controls
 {
-    public partial class fishPanel : UserControl
+    public partial class FishControl : UserControl
     {
-        public fishPanel()
+        public FishControl()
         {
             InitializeComponent();
         }
